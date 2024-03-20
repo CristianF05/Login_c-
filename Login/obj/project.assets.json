@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alumno\\source\\repos\\Login\\Login\\Login.csproj",
+      "projectUniqueName": "C:\\Users\\Alumno\\Desktop\\Login\\Login\\Login.csproj",
       "projectName": "Login",
-      "projectPath": "C:\\Users\\Alumno\\source\\repos\\Login\\Login\\Login.csproj",
+      "projectPath": "C:\\Users\\Alumno\\Desktop\\Login\\Login\\Login.csproj",
       "packagesPath": "C:\\Users\\Alumno\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alumno\\source\\repos\\Login\\Login\\obj\\",
+      "outputPath": "C:\\Users\\Alumno\\Desktop\\Login\\Login\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
