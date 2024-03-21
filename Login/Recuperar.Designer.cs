@@ -36,6 +36,10 @@
             txtCorreo = new TextBox();
             txtUsuario = new TextBox();
             btnEnviar = new Button();
+            label5 = new Label();
+            label6 = new Label();
+            txtRepetir = new TextBox();
+            txtContraseña = new TextBox();
             SuspendLayout();
             // 
             // label1
@@ -107,7 +111,7 @@
             btnEnviar.FlatStyle = FlatStyle.Flat;
             btnEnviar.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnEnviar.ForeColor = Color.Black;
-            btnEnviar.Location = new Point(150, 273);
+            btnEnviar.Location = new Point(147, 464);
             btnEnviar.Name = "btnEnviar";
             btnEnviar.Size = new Size(106, 41);
             btnEnviar.TabIndex = 10;
@@ -115,12 +119,54 @@
             btnEnviar.UseVisualStyleBackColor = true;
             btnEnviar.Click += btnEnviar_Click;
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Arial Narrow", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(44, 358);
+            label5.Margin = new Padding(4, 0, 4, 0);
+            label5.Name = "label5";
+            label5.Size = new Size(196, 25);
+            label5.TabIndex = 14;
+            label5.Text = "Repetir la Contraseña";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Arial Narrow", 15.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label6.Location = new Point(44, 261);
+            label6.Margin = new Padding(4, 0, 4, 0);
+            label6.Name = "label6";
+            label6.Size = new Size(110, 25);
+            label6.TabIndex = 13;
+            label6.Text = "Contraseña";
+            // 
+            // txtRepetir
+            // 
+            txtRepetir.Location = new Point(44, 406);
+            txtRepetir.Margin = new Padding(4);
+            txtRepetir.Name = "txtRepetir";
+            txtRepetir.Size = new Size(142, 23);
+            txtRepetir.TabIndex = 12;
+            // 
+            // txtContraseña
+            // 
+            txtContraseña.Location = new Point(44, 303);
+            txtContraseña.Margin = new Padding(4);
+            txtContraseña.Name = "txtContraseña";
+            txtContraseña.Size = new Size(127, 23);
+            txtContraseña.TabIndex = 11;
+            // 
             // Recuperar
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Teal;
-            ClientSize = new Size(449, 381);
+            ClientSize = new Size(449, 537);
+            Controls.Add(label5);
+            Controls.Add(label6);
+            Controls.Add(txtRepetir);
+            Controls.Add(txtContraseña);
             Controls.Add(btnEnviar);
             Controls.Add(txtUsuario);
             Controls.Add(txtCorreo);
@@ -145,5 +191,9 @@
         private TextBox txtCorreo;
         private TextBox txtUsuario;
         private Button btnEnviar;
+        private Label label5;
+        private Label label6;
+        private TextBox txtRepetir;
+        private TextBox txtContraseña;
     }
 }
