@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alumno\\Desktop\\Login\\Login\\Login.csproj": {}
+    "C:\\Users\\Alumno\\Desktop\\Login_c-\\Login\\Login.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alumno\\Desktop\\Login\\Login\\Login.csproj": {
+    "C:\\Users\\Alumno\\Desktop\\Login_c-\\Login\\Login.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alumno\\Desktop\\Login\\Login\\Login.csproj",
+        "projectUniqueName": "C:\\Users\\Alumno\\Desktop\\Login_c-\\Login\\Login.csproj",
         "projectName": "Login",
-        "projectPath": "C:\\Users\\Alumno\\Desktop\\Login\\Login\\Login.csproj",
+        "projectPath": "C:\\Users\\Alumno\\Desktop\\Login_c-\\Login\\Login.csproj",
         "packagesPath": "C:\\Users\\Alumno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alumno\\Desktop\\Login\\Login\\obj\\",
+        "outputPath": "C:\\Users\\Alumno\\Desktop\\Login_c-\\Login\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -39,11 +39,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -68,7 +63,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

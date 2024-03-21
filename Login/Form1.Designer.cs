@@ -30,14 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             pictureBox1 = new PictureBox();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            btnContraseña = new TextBox();
+            btnUsuario = new TextBox();
             label1 = new Label();
-            button1 = new Button();
+            btnIngresar = new Button();
             label2 = new Label();
             label3 = new Label();
             linkLabel1 = new LinkLabel();
             linkLabel2 = new LinkLabel();
+            label = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -46,7 +47,7 @@
             pictureBox1.BackColor = SystemColors.ButtonFace;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.InitialImage = (Image)resources.GetObject("pictureBox1.InitialImage");
-            pictureBox1.Location = new Point(-1, 3);
+            pictureBox1.Location = new Point(-1, 0);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(370, 380);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -54,21 +55,23 @@
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
             // 
-            // textBox1
+            // btnContraseña
             // 
-            textBox1.Font = new Font("Arial", 12F);
-            textBox1.Location = new Point(358, 210);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(223, 26);
-            textBox1.TabIndex = 3;
+            btnContraseña.Font = new Font("Arial", 12F);
+            btnContraseña.Location = new Point(358, 210);
+            btnContraseña.Name = "btnContraseña";
+            btnContraseña.Size = new Size(223, 26);
+            btnContraseña.TabIndex = 3;
+            btnContraseña.TextChanged += btnContraseña_TextChanged;
             // 
-            // textBox2
+            // btnUsuario
             // 
-            textBox2.Font = new Font("Arial", 12F);
-            textBox2.Location = new Point(358, 129);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(223, 26);
-            textBox2.TabIndex = 4;
+            btnUsuario.Font = new Font("Arial", 12F);
+            btnUsuario.Location = new Point(358, 129);
+            btnUsuario.Name = "btnUsuario";
+            btnUsuario.Size = new Size(223, 26);
+            btnUsuario.TabIndex = 4;
+            btnUsuario.TextChanged += btnUsuario_TextChanged;
             // 
             // label1
             // 
@@ -82,22 +85,22 @@
             label1.TabIndex = 5;
             label1.Text = "Login";
             // 
-            // button1
+            // btnIngresar
             // 
-            button1.BackColor = Color.DarkCyan;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.Aquamarine;
-            button1.Location = new Point(412, 321);
-            button1.MaximumSize = new Size(121, 38);
-            button1.MinimumSize = new Size(121, 38);
-            button1.Name = "button1";
-            button1.Size = new Size(121, 38);
-            button1.TabIndex = 6;
-            button1.Text = "Ingresar";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            btnIngresar.BackColor = Color.DarkCyan;
+            btnIngresar.FlatAppearance.BorderSize = 0;
+            btnIngresar.FlatStyle = FlatStyle.Flat;
+            btnIngresar.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            btnIngresar.ForeColor = Color.Aquamarine;
+            btnIngresar.Location = new Point(412, 321);
+            btnIngresar.MaximumSize = new Size(121, 38);
+            btnIngresar.MinimumSize = new Size(121, 38);
+            btnIngresar.Name = "btnIngresar";
+            btnIngresar.Size = new Size(121, 38);
+            btnIngresar.TabIndex = 6;
+            btnIngresar.Text = "Ingresar";
+            btnIngresar.UseVisualStyleBackColor = false;
+            btnIngresar.Click += button1_Click;
             // 
             // label2
             // 
@@ -149,20 +152,32 @@
             linkLabel2.TabStop = true;
             linkLabel2.Text = "Crear Cuenta";
             // 
+            // label
+            // 
+            label.AutoSize = true;
+            label.Font = new Font("Segoe UI", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label.ForeColor = Color.Aquamarine;
+            label.Location = new Point(108, 287);
+            label.Name = "label";
+            label.Size = new Size(139, 32);
+            label.TabIndex = 11;
+            label.Text = "Debelopers";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(0, 0, 50);
             ClientSize = new Size(621, 382);
+            Controls.Add(label);
             Controls.Add(linkLabel2);
             Controls.Add(linkLabel1);
             Controls.Add(label3);
             Controls.Add(label2);
-            Controls.Add(button1);
+            Controls.Add(btnIngresar);
             Controls.Add(label1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(btnUsuario);
+            Controls.Add(btnContraseña);
             Controls.Add(pictureBox1);
             MaximumSize = new Size(637, 421);
             MinimumSize = new Size(637, 421);
@@ -175,13 +190,14 @@
 
         #endregion
         private PictureBox pictureBox1;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox btnContraseña;
+        private TextBox btnUsuario;
         private Label label1;
-        private Button button1;
+        private Button btnIngresar;
         private Label label2;
         private Label label3;
         private LinkLabel linkLabel1;
         private LinkLabel linkLabel2;
+        private Label label;
     }
 }
