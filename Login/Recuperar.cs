@@ -16,6 +16,8 @@ namespace Login
         public Recuperar()
         {
             InitializeComponent();
+            txtContraseña.PasswordChar = '•';
+            txtRepetir.PasswordChar = '•';
         }
 
         private void btnEnviar_Click(object sender, EventArgs e)
@@ -57,11 +59,19 @@ namespace Login
 
                     int rowsAffectedRegistro = commandUpdateRegistro.ExecuteNonQuery();
 
+                    if (!txtCorreo.Text.Contains("@"))
+                    {
+                        MessageBox.Show("El campo de correo electrónico debe contener el símbolo '@'.");
+                        return; // Salir del método si el correo electrónico no es válido
+                    }
+
                     if (rowsAffectedRegistro == 0)
                     {
                         MessageBox.Show("No se encontraron registros para actualizar.");
                         return;
                     }
+                    // Verificar que el campo de correo electrónico contenga el carácter '@'
+
                 }
 
                 // Actualizar la contraseña en la tabla login
@@ -83,6 +93,32 @@ namespace Login
             }
             this.Close();
 
+        }
+
+        private void btnMostrar_CheckedChanged(object sender, EventArgs e)
+        {
+            // Cambiar el carácter de contraseña entre '*' y '\0' (carácter nulo) para mostrar u ocultar
+            if (btnMostrar.Checked)
+            {
+                txtContraseña.PasswordChar = '\0'; // Mostrar contraseña
+            }
+            else
+            {
+                txtContraseña.PasswordChar = '*'; // Ocultar contraseña
+            }
+        }
+
+        private void btnMostrar2_CheckedChanged(object sender, EventArgs e)
+        {
+            // Cambiar el carácter de contraseña entre '*' y '\0' (carácter nulo) para mostrar u ocultar
+            if (btnMostrar2.Checked)
+            {
+                txtRepetir.PasswordChar = '\0'; // Mostrar contraseña
+            }
+            else
+            {
+                txtRepetir.PasswordChar = '*'; // Ocultar contraseña
+            }
         }
     }
 }

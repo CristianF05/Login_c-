@@ -63,3 +63,4 @@ C:\Users\Alumno\Desktop\Login_c-\Login\obj\Debug\net8.0-windows\Login.Crear.reso
 C:\Users\Alumno\Desktop\Login_c-\Login\obj\Debug\net8.0-windows\Login.Login.resources
 C:\Users\Alumno\Desktop\Login_c-\Login\obj\Debug\net8.0-windows\Login.Pagina_inicial.resources
 C:\Users\Alumno\Desktop\Login_c-\Login\obj\Debug\net8.0-windows\Login.Recuperar.resources
+C:\Users\Alumno\Desktop\Login_c-\Login\obj\Debug\net8.0-windows\Login.Eliminar.resources

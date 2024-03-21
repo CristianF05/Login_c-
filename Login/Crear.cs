@@ -34,6 +34,13 @@ namespace Login
                 return; // Salir del método si no están completos todos los campos
             }
 
+            // Verificar que el campo de correo electrónico contenga el carácter '@'
+            if (!txtCorreo.Text.Contains("@"))
+            {
+                MessageBox.Show("El campo de correo electrónico debe contener el símbolo '@'.");
+                return; // Salir del método si el correo electrónico no es válido
+            }
+
             // Verificar que las contraseñas coincidan
             if (txtContraseña.Text != txtRepetir.Text)
             {
@@ -72,6 +79,33 @@ namespace Login
 
             // Mostrar Form1 y ocultar Form3
             this.Close();
+
+        }
+
+        private void btnMostrar2_CheckedChanged(object sender, EventArgs e)
+        {
+            // Cambiar el carácter de contraseña entre '*' y '\0' (carácter nulo) para mostrar u ocultar
+            if (btnMostrar2.Checked)
+            {
+                txtContraseña.PasswordChar = '\0'; // Mostrar contraseña
+            }
+            else
+            {
+                txtContraseña.PasswordChar = '*'; // Ocultar contraseña
+            }
+        }
+
+        private void btnMostrar_CheckedChanged(object sender, EventArgs e)
+        {
+            // Cambiar el carácter de contraseña entre '*' y '\0' (carácter nulo) para mostrar u ocultar
+            if (btnMostrar.Checked)
+            {
+                txtRepetir.PasswordChar = '\0'; // Mostrar contraseña
+            }
+            else
+            {
+                txtRepetir.PasswordChar = '*'; // Ocultar contraseña
+            }
         }
     }
 }

@@ -42,6 +42,8 @@
             txtContraseña = new TextBox();
             txtRepetir = new TextBox();
             btnGuardar = new Button();
+            btnMostrar2 = new CheckBox();
+            btnMostrar = new CheckBox();
             SuspendLayout();
             // 
             // label1
@@ -183,12 +185,40 @@
             btnGuardar.UseVisualStyleBackColor = false;
             btnGuardar.Click += btnGuardar_Click;
             // 
-            // Form3
+            // btnMostrar2
+            // 
+            btnMostrar2.AutoSize = true;
+            btnMostrar2.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnMostrar2.ForeColor = Color.White;
+            btnMostrar2.Location = new Point(275, 376);
+            btnMostrar2.Name = "btnMostrar2";
+            btnMostrar2.Size = new Size(79, 24);
+            btnMostrar2.TabIndex = 14;
+            btnMostrar2.Text = "Mostrar";
+            btnMostrar2.UseVisualStyleBackColor = true;
+            btnMostrar2.CheckedChanged += btnMostrar2_CheckedChanged;
+            // 
+            // btnMostrar
+            // 
+            btnMostrar.AutoSize = true;
+            btnMostrar.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnMostrar.ForeColor = Color.White;
+            btnMostrar.Location = new Point(275, 439);
+            btnMostrar.Name = "btnMostrar";
+            btnMostrar.Size = new Size(79, 24);
+            btnMostrar.TabIndex = 15;
+            btnMostrar.Text = "Mostrar";
+            btnMostrar.UseVisualStyleBackColor = true;
+            btnMostrar.CheckedChanged += btnMostrar_CheckedChanged;
+            // 
+            // Crear
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(0, 0, 50);
             ClientSize = new Size(443, 590);
+            Controls.Add(btnMostrar);
+            Controls.Add(btnMostrar2);
             Controls.Add(btnGuardar);
             Controls.Add(txtRepetir);
             Controls.Add(txtContraseña);
@@ -203,7 +233,7 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Name = "Form3";
+            Name = "Crear";
             Text = "Form3";
             ResumeLayout(false);
             PerformLayout();
@@ -225,5 +255,7 @@
         private TextBox txtContraseña;
         private TextBox txtRepetir;
         private Button btnGuardar;
+        private CheckBox btnMostrar2;
+        private CheckBox btnMostrar;
     }
 }

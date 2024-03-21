@@ -90,5 +90,18 @@ namespace Login
             // Ocultar Form1
             this.Hide();
         }
+
+        private void btnMostrar_CheckedChanged(object sender, EventArgs e)
+        {
+            // Cambiar el carácter de contraseña entre '*' y '\0' (carácter nulo) para mostrar u ocultar
+            if (btnMostrar.Checked)
+            {
+                btnContraseña.PasswordChar = '\0'; // Mostrar contraseña
+            }
+            else
+            {
+                btnContraseña.PasswordChar = '*'; // Ocultar contraseña
+            }
+        }
     }
 }

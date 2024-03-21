@@ -39,6 +39,7 @@
             linkRecuperar = new LinkLabel();
             linkCrear = new LinkLabel();
             label = new Label();
+            btnMostrar = new CheckBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -47,7 +48,7 @@
             pictureBox1.BackColor = SystemColors.ButtonFace;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.InitialImage = (Image)resources.GetObject("pictureBox1.InitialImage");
-            pictureBox1.Location = new Point(-1, 0);
+            pictureBox1.Location = new Point(-2, 1);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(370, 380);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -58,7 +59,7 @@
             // btnContraseña
             // 
             btnContraseña.Font = new Font("Arial", 12F);
-            btnContraseña.Location = new Point(358, 210);
+            btnContraseña.Location = new Point(334, 209);
             btnContraseña.Name = "btnContraseña";
             btnContraseña.Size = new Size(223, 26);
             btnContraseña.TabIndex = 3;
@@ -67,7 +68,7 @@
             // btnUsuario
             // 
             btnUsuario.Font = new Font("Arial", 12F);
-            btnUsuario.Location = new Point(358, 129);
+            btnUsuario.Location = new Point(334, 128);
             btnUsuario.Name = "btnUsuario";
             btnUsuario.Size = new Size(223, 26);
             btnUsuario.TabIndex = 4;
@@ -79,7 +80,7 @@
             label1.BackColor = Color.FromArgb(0, 0, 50);
             label1.Font = new Font("Bell MT", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Aquamarine;
-            label1.Location = new Point(392, 25);
+            label1.Location = new Point(374, 24);
             label1.Name = "label1";
             label1.Size = new Size(141, 54);
             label1.TabIndex = 5;
@@ -92,7 +93,7 @@
             btnIngresar.FlatStyle = FlatStyle.Flat;
             btnIngresar.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             btnIngresar.ForeColor = Color.Aquamarine;
-            btnIngresar.Location = new Point(412, 321);
+            btnIngresar.Location = new Point(388, 320);
             btnIngresar.MaximumSize = new Size(121, 38);
             btnIngresar.MinimumSize = new Size(121, 38);
             btnIngresar.Name = "btnIngresar";
@@ -107,7 +108,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.Aquamarine;
-            label2.Location = new Point(358, 96);
+            label2.Location = new Point(334, 95);
             label2.Name = "label2";
             label2.Size = new Size(87, 30);
             label2.TabIndex = 7;
@@ -118,7 +119,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.Aquamarine;
-            label3.Location = new Point(358, 171);
+            label3.Location = new Point(334, 170);
             label3.Name = "label3";
             label3.Size = new Size(137, 32);
             label3.TabIndex = 8;
@@ -131,7 +132,7 @@
             linkRecuperar.DisabledLinkColor = Color.White;
             linkRecuperar.Font = new Font("Segoe UI", 12F, FontStyle.Italic, GraphicsUnit.Point, 0);
             linkRecuperar.LinkColor = Color.Turquoise;
-            linkRecuperar.Location = new Point(358, 245);
+            linkRecuperar.Location = new Point(334, 244);
             linkRecuperar.Name = "linkRecuperar";
             linkRecuperar.Size = new Size(162, 21);
             linkRecuperar.TabIndex = 9;
@@ -146,7 +147,7 @@
             linkCrear.DisabledLinkColor = Color.White;
             linkCrear.Font = new Font("Segoe UI", 12F, FontStyle.Italic, GraphicsUnit.Point, 0);
             linkCrear.LinkColor = Color.Turquoise;
-            linkCrear.Location = new Point(358, 282);
+            linkCrear.Location = new Point(334, 281);
             linkCrear.Name = "linkCrear";
             linkCrear.Size = new Size(103, 21);
             linkCrear.TabIndex = 10;
@@ -165,12 +166,26 @@
             label.TabIndex = 11;
             label.Text = "Debelopers";
             // 
+            // btnMostrar
+            // 
+            btnMostrar.AutoSize = true;
+            btnMostrar.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnMostrar.ForeColor = Color.White;
+            btnMostrar.Location = new Point(530, 241);
+            btnMostrar.Name = "btnMostrar";
+            btnMostrar.Size = new Size(79, 24);
+            btnMostrar.TabIndex = 15;
+            btnMostrar.Text = "Mostrar";
+            btnMostrar.UseVisualStyleBackColor = true;
+            btnMostrar.CheckedChanged += btnMostrar_CheckedChanged;
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(0, 0, 50);
             ClientSize = new Size(621, 382);
+            Controls.Add(btnMostrar);
             Controls.Add(label);
             Controls.Add(linkCrear);
             Controls.Add(linkRecuperar);
@@ -201,5 +216,6 @@
         private LinkLabel linkRecuperar;
         private LinkLabel linkCrear;
         private Label label;
+        private CheckBox btnMostrar;
     }
 }

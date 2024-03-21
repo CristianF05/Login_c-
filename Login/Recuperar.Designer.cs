@@ -40,12 +40,15 @@
             label6 = new Label();
             txtRepetir = new TextBox();
             txtContraseña = new TextBox();
+            btnMostrar = new CheckBox();
+            btnMostrar2 = new CheckBox();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Arial", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.White;
             label1.Location = new Point(32, 31);
             label1.Name = "label1";
             label1.Size = new Size(355, 36);
@@ -56,6 +59,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Arial Narrow", 18F, FontStyle.Bold);
+            label2.ForeColor = Color.White;
             label2.Location = new Point(44, 110);
             label2.Name = "label2";
             label2.Size = new Size(88, 29);
@@ -74,6 +78,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Arial Narrow", 18F, FontStyle.Bold);
+            label3.ForeColor = Color.White;
             label3.Location = new Point(44, 180);
             label3.Name = "label3";
             label3.Size = new Size(78, 29);
@@ -84,6 +89,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Arial Narrow", 18F, FontStyle.Bold);
+            label4.ForeColor = Color.White;
             label4.Location = new Point(218, 108);
             label4.Name = "label4";
             label4.Size = new Size(86, 29);
@@ -108,21 +114,23 @@
             // 
             // btnEnviar
             // 
+            btnEnviar.BackColor = Color.Aquamarine;
             btnEnviar.FlatStyle = FlatStyle.Flat;
             btnEnviar.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnEnviar.ForeColor = Color.Black;
+            btnEnviar.ForeColor = Color.FromArgb(0, 64, 64);
             btnEnviar.Location = new Point(147, 464);
             btnEnviar.Name = "btnEnviar";
-            btnEnviar.Size = new Size(106, 41);
+            btnEnviar.Size = new Size(134, 42);
             btnEnviar.TabIndex = 10;
             btnEnviar.Text = "Enviar";
-            btnEnviar.UseVisualStyleBackColor = true;
+            btnEnviar.UseVisualStyleBackColor = false;
             btnEnviar.Click += btnEnviar_Click;
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Arial Narrow", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.ForeColor = Color.White;
             label5.Location = new Point(44, 358);
             label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
@@ -134,6 +142,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Arial Narrow", 15.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label6.ForeColor = Color.White;
             label6.Location = new Point(44, 261);
             label6.Margin = new Padding(4, 0, 4, 0);
             label6.Name = "label6";
@@ -157,12 +166,40 @@
             txtContraseña.Size = new Size(127, 23);
             txtContraseña.TabIndex = 11;
             // 
+            // btnMostrar
+            // 
+            btnMostrar.AutoSize = true;
+            btnMostrar.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnMostrar.ForeColor = Color.White;
+            btnMostrar.Location = new Point(189, 301);
+            btnMostrar.Name = "btnMostrar";
+            btnMostrar.Size = new Size(79, 24);
+            btnMostrar.TabIndex = 15;
+            btnMostrar.Text = "Mostrar";
+            btnMostrar.UseVisualStyleBackColor = true;
+            btnMostrar.CheckedChanged += btnMostrar_CheckedChanged;
+            // 
+            // btnMostrar2
+            // 
+            btnMostrar2.AutoSize = true;
+            btnMostrar2.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnMostrar2.ForeColor = Color.White;
+            btnMostrar2.Location = new Point(202, 406);
+            btnMostrar2.Name = "btnMostrar2";
+            btnMostrar2.Size = new Size(79, 24);
+            btnMostrar2.TabIndex = 16;
+            btnMostrar2.Text = "Mostrar";
+            btnMostrar2.UseVisualStyleBackColor = true;
+            btnMostrar2.CheckedChanged += btnMostrar2_CheckedChanged;
+            // 
             // Recuperar
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Teal;
+            BackColor = Color.FromArgb(0, 0, 50);
             ClientSize = new Size(449, 537);
+            Controls.Add(btnMostrar2);
+            Controls.Add(btnMostrar);
             Controls.Add(label5);
             Controls.Add(label6);
             Controls.Add(txtRepetir);
@@ -195,5 +232,7 @@
         private Label label6;
         private TextBox txtRepetir;
         private TextBox txtContraseña;
+        private CheckBox btnMostrar;
+        private CheckBox btnMostrar2;
     }
 }
