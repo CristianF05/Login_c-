@@ -38,7 +38,6 @@ C:\Users\Alumno\Desktop\Login_c-\Login\bin\Debug\net8.0-windows\Login.deps.json
 C:\Users\Alumno\Desktop\Login_c-\Login\bin\Debug\net8.0-windows\Login.runtimeconfig.json
 C:\Users\Alumno\Desktop\Login_c-\Login\bin\Debug\net8.0-windows\Login.dll
 C:\Users\Alumno\Desktop\Login_c-\Login\bin\Debug\net8.0-windows\Login.pdb
-C:\Users\Alumno\Desktop\Login_c-\Login\obj\Debug\net8.0-windows\Login.Form1.resources
 C:\Users\Alumno\Desktop\Login_c-\Login\obj\Debug\net8.0-windows\Login.Properties.Resources.resources
 C:\Users\Alumno\Desktop\Login_c-\Login\obj\Debug\net8.0-windows\Login.csproj.GenerateResource.cache
 C:\Users\Alumno\Desktop\Login_c-\Login\obj\Debug\net8.0-windows\Login.GeneratedMSBuildEditorConfig.editorconfig
@@ -51,7 +50,6 @@ C:\Users\Alumno\Desktop\Login_c-\Login\obj\Debug\net8.0-windows\refint\Login.dll
 C:\Users\Alumno\Desktop\Login_c-\Login\obj\Debug\net8.0-windows\Login.pdb
 C:\Users\Alumno\Desktop\Login_c-\Login\obj\Debug\net8.0-windows\Login.genruntimeconfig.cache
 C:\Users\Alumno\Desktop\Login_c-\Login\obj\Debug\net8.0-windows\ref\Login.dll
-C:\Users\Alumno\Desktop\Login_c-\Login\obj\Debug\net8.0-windows\Login.Form2.resources
 C:\Users\Alumno\Desktop\Login_c-\Login\bin\Debug\net8.0-windows\Login.dll.config
 C:\Users\Alumno\Desktop\Login_c-\Login\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
 C:\Users\Alumno\Desktop\Login_c-\Login\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
@@ -61,3 +59,8 @@ C:\Users\Alumno\Desktop\Login_c-\Login\bin\Debug\net8.0-windows\runtimes\unix\li
 C:\Users\Alumno\Desktop\Login_c-\Login\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Alumno\Desktop\Login_c-\Login\obj\Debug\net8.0-windows\Login.csproj.AssemblyReference.cache
 C:\Users\Alumno\Desktop\Login_c-\Login\obj\Debug\net8.0-windows\Login.csproj.CopyComplete
+C:\Users\Alumno\Desktop\Login_c-\Login\obj\Debug\net8.0-windows\Login.Crear.resources
+C:\Users\Alumno\Desktop\Login_c-\Login\obj\Debug\net8.0-windows\Login.Login.resources
+C:\Users\Alumno\Desktop\Login_c-\Login\obj\Debug\net8.0-windows\Login.Pagina_inicial.resources
+C:\Users\Alumno\Desktop\Login_c-\Login\obj\Debug\net8.0-windows\Login.Recuperar.resources
+C:\Users\Alumno\Desktop\Login_c-\Login\obj\Debug\net8.0-windows\Login.Cambiar.resources

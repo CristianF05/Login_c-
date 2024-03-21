@@ -1,6 +1,6 @@
 ﻿namespace Login
 {
-    partial class Form1
+    partial class Login
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             pictureBox1 = new PictureBox();
             btnContraseña = new TextBox();
             btnUsuario = new TextBox();
@@ -36,8 +36,8 @@
             btnIngresar = new Button();
             label2 = new Label();
             label3 = new Label();
-            linkLabel1 = new LinkLabel();
-            linkLabel2 = new LinkLabel();
+            linkRecuperar = new LinkLabel();
+            linkCrear = new LinkLabel();
             label = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -124,33 +124,35 @@
             label3.TabIndex = 8;
             label3.Text = "Contraseña";
             // 
-            // linkLabel1
+            // linkRecuperar
             // 
-            linkLabel1.ActiveLinkColor = Color.Cyan;
-            linkLabel1.AutoSize = true;
-            linkLabel1.DisabledLinkColor = Color.White;
-            linkLabel1.Font = new Font("Segoe UI", 12F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            linkLabel1.LinkColor = Color.Turquoise;
-            linkLabel1.Location = new Point(358, 245);
-            linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(162, 21);
-            linkLabel1.TabIndex = 9;
-            linkLabel1.TabStop = true;
-            linkLabel1.Text = "Recuperar contraseña";
+            linkRecuperar.ActiveLinkColor = Color.Cyan;
+            linkRecuperar.AutoSize = true;
+            linkRecuperar.DisabledLinkColor = Color.White;
+            linkRecuperar.Font = new Font("Segoe UI", 12F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            linkRecuperar.LinkColor = Color.Turquoise;
+            linkRecuperar.Location = new Point(358, 245);
+            linkRecuperar.Name = "linkRecuperar";
+            linkRecuperar.Size = new Size(162, 21);
+            linkRecuperar.TabIndex = 9;
+            linkRecuperar.TabStop = true;
+            linkRecuperar.Text = "Recuperar contraseña";
+            linkRecuperar.LinkClicked += linkLabel1_LinkClicked;
             // 
-            // linkLabel2
+            // linkCrear
             // 
-            linkLabel2.ActiveLinkColor = Color.Cyan;
-            linkLabel2.AutoSize = true;
-            linkLabel2.DisabledLinkColor = Color.White;
-            linkLabel2.Font = new Font("Segoe UI", 12F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            linkLabel2.LinkColor = Color.Turquoise;
-            linkLabel2.Location = new Point(358, 282);
-            linkLabel2.Name = "linkLabel2";
-            linkLabel2.Size = new Size(103, 21);
-            linkLabel2.TabIndex = 10;
-            linkLabel2.TabStop = true;
-            linkLabel2.Text = "Crear Cuenta";
+            linkCrear.ActiveLinkColor = Color.Cyan;
+            linkCrear.AutoSize = true;
+            linkCrear.DisabledLinkColor = Color.White;
+            linkCrear.Font = new Font("Segoe UI", 12F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            linkCrear.LinkColor = Color.Turquoise;
+            linkCrear.Location = new Point(358, 282);
+            linkCrear.Name = "linkCrear";
+            linkCrear.Size = new Size(103, 21);
+            linkCrear.TabIndex = 10;
+            linkCrear.TabStop = true;
+            linkCrear.Text = "Crear Cuenta";
+            linkCrear.LinkClicked += linkCrear_LinkClicked;
             // 
             // label
             // 
@@ -163,15 +165,15 @@
             label.TabIndex = 11;
             label.Text = "Debelopers";
             // 
-            // Form1
+            // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(0, 0, 50);
             ClientSize = new Size(621, 382);
             Controls.Add(label);
-            Controls.Add(linkLabel2);
-            Controls.Add(linkLabel1);
+            Controls.Add(linkCrear);
+            Controls.Add(linkRecuperar);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(btnIngresar);
@@ -181,7 +183,7 @@
             Controls.Add(pictureBox1);
             MaximumSize = new Size(637, 421);
             MinimumSize = new Size(637, 421);
-            Name = "Form1";
+            Name = "Login";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
@@ -196,8 +198,8 @@
         private Button btnIngresar;
         private Label label2;
         private Label label3;
-        private LinkLabel linkLabel1;
-        private LinkLabel linkLabel2;
+        private LinkLabel linkRecuperar;
+        private LinkLabel linkCrear;
         private Label label;
     }
 }

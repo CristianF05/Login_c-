@@ -1,6 +1,6 @@
 ﻿namespace Login
 {
-    partial class Form2
+    partial class Pagina_inicial
     {
         /// <summary>
         /// Required designer variable.

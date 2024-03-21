@@ -3,11 +3,11 @@ using System.Data.SqlClient;
 namespace Login
 {
 
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
 
         // Usuario y contraseña almacenados
-        public Form1()
+        public Login()
         {
             InitializeComponent();
             btnContraseña.PasswordChar = '•';
@@ -49,7 +49,7 @@ namespace Login
                 this.Hide();
 
                 // Abrir el formulario principal (Form2.cs)
-                Form2 form2 = new Form2();
+                Pagina_inicial form2 = new Pagina_inicial();
                 form2.FormClosed += (s, args) => this.Close(); // Cerrar Form1 cuando Form2 se cierre
                 form2.Show();
             }
@@ -67,6 +67,28 @@ namespace Login
         private void btnContraseña_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void linkCrear_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            // Abrir Form3
+            Crear form3 = new Crear();
+            form3.FormClosed += (s, args) => this.Show(); // Mostrar Form1 cuando se cierre Form3
+            form3.Show();
+
+            // Ocultar Form1
+            this.Hide();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            // Mostrar Form4
+            Recuperar form4 = new Recuperar();
+            form4.FormClosed += (s, args) => this.Show(); // Mostrar Form1 cuando se cierre Form4
+            form4.Show();
+
+            // Ocultar Form1
+            this.Hide();
         }
     }
 }

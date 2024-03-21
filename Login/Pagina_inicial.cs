@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Login
 {
-    public partial class Form2 : Form
+    public partial class Pagina_inicial : Form
     {
-        public Form2()
+        public Pagina_inicial()
         {
             InitializeComponent();
         }

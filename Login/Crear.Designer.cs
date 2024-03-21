@@ -1,6 +1,6 @@
 ﻿namespace Login
 {
-    partial class Form3
+    partial class Crear
     {
         /// <summary>
         /// Required designer variable.
@@ -35,12 +35,13 @@
             label5 = new Label();
             label6 = new Label();
             label7 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox7 = new TextBox();
-            textBox5 = new TextBox();
+            txtNombre = new TextBox();
+            txtApellido = new TextBox();
+            txtCorreo = new TextBox();
+            txtUsuario = new TextBox();
+            txtContraseña = new TextBox();
+            txtRepetir = new TextBox();
+            btnGuardar = new Button();
             SuspendLayout();
             // 
             // label1
@@ -114,59 +115,73 @@
             label7.AutoSize = true;
             label7.Font = new Font("Arial Narrow", 14.25F, FontStyle.Bold | FontStyle.Italic);
             label7.ForeColor = Color.White;
-            label7.Location = new Point(27, 403);
+            label7.Location = new Point(35, 406);
             label7.Name = "label7";
             label7.Size = new Size(158, 23);
             label7.TabIndex = 6;
             label7.Text = "Reita la Contraseña";
             // 
-            // textBox1
+            // txtNombre
             // 
-            textBox1.Font = new Font("Arial Narrow", 12F, FontStyle.Italic);
-            textBox1.Location = new Point(36, 148);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(143, 26);
-            textBox1.TabIndex = 7;
+            txtNombre.Font = new Font("Arial Narrow", 12F, FontStyle.Italic);
+            txtNombre.Location = new Point(36, 148);
+            txtNombre.Name = "txtNombre";
+            txtNombre.Size = new Size(224, 26);
+            txtNombre.TabIndex = 7;
             // 
-            // textBox2
+            // txtApellido
             // 
-            textBox2.Font = new Font("Arial Narrow", 12F, FontStyle.Italic);
-            textBox2.Location = new Point(36, 209);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(143, 26);
-            textBox2.TabIndex = 8;
+            txtApellido.Font = new Font("Arial Narrow", 12F, FontStyle.Italic);
+            txtApellido.Location = new Point(36, 209);
+            txtApellido.Name = "txtApellido";
+            txtApellido.Size = new Size(224, 26);
+            txtApellido.TabIndex = 8;
             // 
-            // textBox3
+            // txtCorreo
             // 
-            textBox3.Font = new Font("Arial Narrow", 12F, FontStyle.Italic);
-            textBox3.Location = new Point(36, 264);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(143, 26);
-            textBox3.TabIndex = 9;
+            txtCorreo.Font = new Font("Arial Narrow", 12F, FontStyle.Italic);
+            txtCorreo.Location = new Point(36, 264);
+            txtCorreo.Name = "txtCorreo";
+            txtCorreo.Size = new Size(224, 26);
+            txtCorreo.TabIndex = 9;
             // 
-            // textBox4
+            // txtUsuario
             // 
-            textBox4.Font = new Font("Arial Narrow", 12F, FontStyle.Italic);
-            textBox4.Location = new Point(36, 319);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(143, 26);
-            textBox4.TabIndex = 10;
+            txtUsuario.Font = new Font("Arial Narrow", 12F, FontStyle.Italic);
+            txtUsuario.Location = new Point(36, 319);
+            txtUsuario.Name = "txtUsuario";
+            txtUsuario.Size = new Size(224, 26);
+            txtUsuario.TabIndex = 10;
             // 
-            // textBox7
+            // txtContraseña
             // 
-            textBox7.Font = new Font("Arial Narrow", 12F, FontStyle.Italic);
-            textBox7.Location = new Point(36, 374);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(143, 26);
-            textBox7.TabIndex = 11;
+            txtContraseña.Font = new Font("Arial Narrow", 12F, FontStyle.Italic);
+            txtContraseña.Location = new Point(36, 374);
+            txtContraseña.Name = "txtContraseña";
+            txtContraseña.Size = new Size(224, 26);
+            txtContraseña.TabIndex = 11;
             // 
-            // textBox5
+            // txtRepetir
             // 
-            textBox5.Font = new Font("Arial Narrow", 12F, FontStyle.Italic);
-            textBox5.Location = new Point(27, 439);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(143, 26);
-            textBox5.TabIndex = 12;
+            txtRepetir.Font = new Font("Arial Narrow", 12F, FontStyle.Italic);
+            txtRepetir.Location = new Point(36, 439);
+            txtRepetir.Name = "txtRepetir";
+            txtRepetir.Size = new Size(224, 26);
+            txtRepetir.TabIndex = 12;
+            // 
+            // btnGuardar
+            // 
+            btnGuardar.BackColor = Color.DarkCyan;
+            btnGuardar.FlatStyle = FlatStyle.Flat;
+            btnGuardar.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnGuardar.ForeColor = Color.Aquamarine;
+            btnGuardar.Location = new Point(131, 527);
+            btnGuardar.Name = "btnGuardar";
+            btnGuardar.Size = new Size(152, 39);
+            btnGuardar.TabIndex = 13;
+            btnGuardar.Text = "Crear Cuenta";
+            btnGuardar.UseVisualStyleBackColor = false;
+            btnGuardar.Click += btnGuardar_Click;
             // 
             // Form3
             // 
@@ -174,12 +189,13 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(0, 0, 50);
             ClientSize = new Size(443, 590);
-            Controls.Add(textBox5);
-            Controls.Add(textBox7);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(btnGuardar);
+            Controls.Add(txtRepetir);
+            Controls.Add(txtContraseña);
+            Controls.Add(txtUsuario);
+            Controls.Add(txtCorreo);
+            Controls.Add(txtApellido);
+            Controls.Add(txtNombre);
             Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
@@ -202,11 +218,12 @@
         private Label label5;
         private Label label6;
         private Label label7;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox7;
-        private TextBox textBox5;
+        private TextBox txtNombre;
+        private TextBox txtApellido;
+        private TextBox txtCorreo;
+        private TextBox txtUsuario;
+        private TextBox txtContraseña;
+        private TextBox txtRepetir;
+        private Button btnGuardar;
     }
 }
